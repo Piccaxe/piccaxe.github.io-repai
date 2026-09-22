@@ -13,13 +13,13 @@
 <meta property="og:title" content="Page not found — RepAI" />
 <meta property="og:description" content="Scan any workout video or photo. AI detects every exercise, set, rep and weight, then builds a routine you can train from. Free on Android, iOS coming soon." />
 <meta property="og:url" content="https://repai.lol/404" />
-<meta property="og:image" content="https://repai.lol/assets/emoji/cheer.png" />
-<meta property="og:image:alt" content="Emoji, the RepAI raccoon mascot, cheering" />
+<meta property="og:image" content="https://repai.lol/assets/rocco/cheer.png" />
+<meta property="og:image:alt" content="Rocco, the RepAI raccoon mascot, cheering" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@repaiapp" />
 <meta name="twitter:title" content="RepAI — Workouts have never been easier" />
 <meta name="twitter:description" content="Scan any workout video or photo. AI detects every exercise, set, rep and weight, then builds a routine you can train from." />
-<meta name="twitter:image" content="https://repai.lol/assets/emoji/cheer.png" />
+<meta name="twitter:image" content="https://repai.lol/assets/rocco/cheer.png" />
 <meta name="theme-color" content="#000000" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -72,8 +72,8 @@
   .side-card-l { font-size: 11px; color: var(--g4); font-weight: 500; margin-bottom: 6px; }
   .side-card-v { font-size: 30px; font-weight: 700; letter-spacing: -1.5px; line-height: 1; margin-bottom: 4px; }
   .side-card-s { font-size: 11px; color: var(--g5); font-weight: 400; }
-  .side-card-emoji { position: relative; }
-  .side-card-emoji img { position: absolute; right: 10px; top: -30px; width: 58px; height: auto; animation: bob 5s ease-in-out infinite; }
+  .side-card-rocco { position: relative; }
+  .side-card-rocco img { position: absolute; right: 10px; top: -30px; width: 58px; height: auto; animation: bob 5s ease-in-out infinite; }
 
   /* ─── MARQUEE ─── */
   .marquee-wrap { border-top: 1px solid var(--g3); border-bottom: 1px solid var(--g3); padding: 28px 0; overflow: hidden; background: var(--g1); }
@@ -230,16 +230,11 @@
   .pr-row span:last-child { color: var(--g5); }
 
   /* ─── EMOJI (mascot) ─── */
-  .emoji-hero { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
-  .emoji-board { margin-top: 64px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
-  .mood { border: 1px solid var(--g3); border-radius: 20px; padding: 26px 20px 22px; text-align: center; background: var(--g1); transition: transform 0.35s var(--ease), border-color 0.35s, box-shadow 0.35s; }
   .mood:hover { transform: translateY(-4px); border-color: var(--black); box-shadow: 0 16px 40px rgba(0,0,0,0.06); }
-  .mood img { width: 104px; height: 104px; object-fit: contain; display: block; margin: 0 auto 14px; animation: bob 5s ease-in-out infinite; animation-delay: var(--delay, 0s); }
   .mood:nth-child(2n) img { animation-duration: 6s; }
   .mood:nth-child(3n) img { animation-duration: 4.4s; }
   .mood-t { font-size: 14px; font-weight: 700; letter-spacing: -0.4px; margin-bottom: 4px; }
   .mood-s { font-size: 12px; color: var(--g5); font-weight: 300; line-height: 1.45; }
-  .emoji-facts { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 24px; }
 
   /* ─── COMMUNITY ─── */
   .comm-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 14px; margin-top: 64px; }
@@ -323,9 +318,9 @@
   /* ─── CTA ─── */
   .cta { padding: 0 0 120px; }
   .cta-box { background: var(--black); border-radius: 32px; padding: 90px 40px; text-align: center; color: var(--white); position: relative; overflow: hidden; }
-  .cta-box .cta-emoji { position: absolute; width: 120px; height: auto; opacity: 0.95; pointer-events: none; animation: bob 6s ease-in-out infinite; }
-  .cta-box .cta-emoji.l { left: 5%; bottom: 8%; }
-  .cta-box .cta-emoji.r { right: 5%; top: 10%; animation-delay: -3s; }
+  .cta-box .cta-rocco { position: absolute; width: 120px; height: auto; opacity: 0.95; pointer-events: none; animation: bob 6s ease-in-out infinite; }
+  .cta-box .cta-rocco.l { left: 5%; bottom: 8%; }
+  .cta-box .cta-rocco.r { right: 5%; top: 10%; animation-delay: -3s; }
   .cta-eyebrow { font-size: 12px; font-weight: 500; color: rgba(255,255,255,0.4); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 24px; }
   .cta-h { font-size: 64px; font-weight: 800; letter-spacing: -3px; line-height: 0.98; margin-bottom: 20px; }
   .cta-h .dim { color: rgba(255,255,255,0.35); font-weight: 300; }
@@ -361,8 +356,7 @@
     .ranks-grid { grid-template-columns: 1fr; }
     .ranks-col:first-child { border-right: none; border-bottom: 1px solid var(--g3); }
     .ranks-col { padding: 28px 24px; }
-    .progress-grid, .comm-grid, .emoji-hero { grid-template-columns: 1fr; }
-    .emoji-board { grid-template-columns: repeat(2, 1fr); }
+    .progress-grid, .comm-grid { grid-template-columns: 1fr; }
     .comm-feats { grid-template-columns: 1fr 1fr; }
     .pricing-grid { grid-template-columns: 1fr; }
     .stats { grid-template-columns: repeat(2, 1fr); }
@@ -370,20 +364,16 @@
     .stat:nth-child(1), .stat:nth-child(2) { border-bottom: 1px solid var(--g3); }
     .cta-h { font-size: 38px; letter-spacing: -2px; }
     .cta-box { padding: 64px 24px; }
-    .cta-box .cta-emoji { width: 72px; opacity: 0.5; }
+    .cta-box .cta-rocco { width: 72px; opacity: 0.5; }
   }
   @media (max-width: 480px) {
     .side-cards { flex-direction: column; }
-    .emoji-board { gap: 10px; }
-    .mood { padding: 20px 12px 16px; }
-    .mood img { width: 80px; height: 80px; }
     .comm-feats { grid-template-columns: 1fr; }
     .pstat.wide { flex-direction: column; text-align: center; }
     .pstats { grid-template-columns: 1fr; }
     .pstat.wide { grid-column: span 1; }
   }
   @media (prefers-reduced-motion: reduce) {
-    .mood img, .cta-emoji, .side-card-emoji img, .pstat.wide img, .hero-float { animation: none !important; }
     .ranks-wrap.in .rung-bar { animation: none !important; }
     .marquee { animation: none !important; }
   }
@@ -392,14 +382,14 @@
 <style>
   .nf { min-height: calc(100vh - 72px); display: flex; align-items: center; justify-content: center; text-align: center; padding: 96px 24px 120px; position: relative; overflow: hidden; }
   .nf-inner { max-width: 620px; position: relative; z-index: 1; }
-  .nf-emoji { width: 200px; height: 200px; object-fit: contain; margin: 0 auto 8px; display: block; animation: nfBob 3.2s ease-in-out infinite; filter: drop-shadow(0 18px 24px rgba(0,0,0,0.12)); }
+  .nf-rocco { width: 200px; height: 200px; object-fit: contain; margin: 0 auto 8px; display: block; animation: nfBob 3.2s ease-in-out infinite; filter: drop-shadow(0 18px 24px rgba(0,0,0,0.12)); }
   .nf-code { font-size: 13px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--g5); margin-bottom: 14px; }
   .nf h1 { font-size: clamp(40px, 7vw, 76px); font-weight: 800; letter-spacing: -0.045em; line-height: 0.98; margin-bottom: 20px; }
   .nf p { color: var(--g6); font-size: 18px; line-height: 1.6; margin-bottom: 34px; }
   .nf-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
   .nf-bg { position: absolute; inset: 0; background: radial-gradient(60% 50% at 50% 40%, var(--g1) 0%, transparent 70%); pointer-events: none; }
   @keyframes nfBob { 0%, 100% { transform: translateY(0) rotate(-2deg); } 50% { transform: translateY(-12px) rotate(2deg); } }
-  @media (prefers-reduced-motion: reduce) { .nf-emoji { animation: none; } }
+  @media (prefers-reduced-motion: reduce) { .nf-rocco { animation: none; } }
 </style>
 </head>
 <body>
@@ -423,7 +413,7 @@
 <main class="nf">
   <div class="nf-bg"></div>
   <div class="nf-inner">
-    <img class="nf-emoji" src="/assets/emoji/confused.png" alt="Emoji, the RepAI raccoon, looking confused" width="200" height="200" />
+    <img class="nf-rocco" src="/assets/rocco/confused.png" alt="Rocco, the RepAI raccoon, looking confused" width="200" height="200" />
     <div class="nf-code">404</div>
     <h1>This set doesn't exist.</h1>
     <p>The page you're after has been deleted, moved, or never made it onto the routine. Let's get you back to something that does.</p>
@@ -445,7 +435,7 @@
         <p class="footer-tag">Workouts have never been easier. Scan any video or photo, build your routine, train smarter.</p>
       </div>
       <div class="footer-col"><h4>Product</h4><a href="/#how">How it works</a><a href="/#features">Features</a><a href="/#programs">Programs</a><a href="/#progress">Progress</a><a href="/#pricing">Pricing</a><a href="/#download">Download</a></div>
-      <div class="footer-col"><h4>Community</h4><a href="/#community">Explore routines</a><a href="/#community">Leaderboard</a><a href="/#ranks">Ranks</a><a href="/#emoji">Meet Emoji</a></div>
+      <div class="footer-col"><h4>Community</h4><a href="/#community">Explore routines</a><a href="/#community">Leaderboard</a><a href="/#ranks">Ranks</a></div>
       <div class="footer-col"><h4>Company</h4><a href="/legal/support">Support</a><a href="/legal/privacy">Privacy</a><a href="/legal/terms">Terms</a></div>
     </div>
     <div class="footer-bottom">
