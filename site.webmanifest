@@ -1,0 +1,15 @@
+{
+  "name": "RepAI",
+  "short_name": "RepAI",
+  "description": "Scan any workout video or photo. AI detects every exercise, set, rep and weight, then builds a routine you can train from.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#111418",
+  "icons": [
+    { "src": "/assets/icon/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/assets/icon/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/assets/icon/icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

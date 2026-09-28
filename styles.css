@@ -25,9 +25,6 @@ body { font-family: 'Archivo', sans-serif; background: var(--white); color: var(
 @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
 @keyframes bob { 0%,100% { transform: translateY(0) rotate(-2deg); } 50% { transform: translateY(-10px) rotate(2deg); } }
 @keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0.25; } }
-@keyframes logoBar1 { 0%,100% { height: 8px; } 50% { height: 18px; } }
-@keyframes logoBar2 { 0%,100% { height: 18px; } 50% { height: 10px; } }
-@keyframes logoBar3 { 0%,100% { height: 12px; } 50% { height: 20px; } }
 @keyframes logoPulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.06); } }
 @keyframes rotateRing { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
 
@@ -40,15 +37,10 @@ body { font-family: 'Archivo', sans-serif; background: var(--white); color: var(
 .d5 { animation-delay: 0.48s; } .d6 { animation-delay: 0.58s; }
 
 /* ─── ANIMATED LOGO ─── */
-.logo-anim { width: 32px; height: 32px; background: var(--black); border-radius: 9px; display: inline-flex; align-items: center; justify-content: center; gap: 2.5px; position: relative; overflow: hidden; }
+.logo-anim { width: 32px; height: 32px; background: var(--white); border: 1px solid var(--g3); border-radius: 9px; display: inline-flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
+.logo-mark { width: 56%; height: auto; display: block; }
 .logo-anim:hover { animation: logoPulse 0.6s var(--ease-spring); }
-.logo-anim .lbar { width: 3px; background: var(--white); border-radius: 2px; }
-.logo-anim .lbar1 { height: 8px;  animation: logoBar1 1.4s ease-in-out infinite; }
-.logo-anim .lbar2 { height: 18px; animation: logoBar2 1.4s ease-in-out infinite 0.15s; }
-.logo-anim .lbar3 { height: 12px; animation: logoBar3 1.4s ease-in-out infinite 0.3s; }
-.logo-anim-lg { width: 88px; height: 88px; border-radius: 22px; gap: 6px; }
-.logo-anim-lg .lbar { width: 8px; border-radius: 4px; }
-.logo-anim-lg .lbar1 { height: 22px; } .logo-anim-lg .lbar2 { height: 48px; } .logo-anim-lg .lbar3 { height: 32px; }
+.logo-anim-lg { width: 88px; height: 88px; border-radius: 22px; }
 .logo-ring { position: absolute; inset: -3px; border: 2px solid var(--black); border-top-color: transparent; border-radius: 24px; animation: rotateRing 3s linear infinite; opacity: 0; }
 .logo-anim-lg:hover .logo-ring { opacity: 0.15; }
 
